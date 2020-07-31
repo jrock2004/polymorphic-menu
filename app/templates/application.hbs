@@ -1,3 +1,16 @@
-<h2 id="title">Welcome to Ember</h2>
+<h1>Service Menu</h1>
 
-{{outlet}}
+<div>
+  {{#each this.model as |group|}}
+    <div>
+      <h2>{{group.name}}</h2>
+
+
+      {{#each group.menuItems as |item|}}
+        <div>
+          <h3>{{item.name}}</h3>
+        </div>
+      {{/each}}
+    </div>
+  {{/each}}
+</div>
