@@ -57,6 +57,8 @@ export default function () {
           type: "menu-item-service",
           attributes: {
             name: "Strictly Bald",
+            duration: "15 min",
+            price: "$ 20.00",
           },
         },
         {
@@ -64,6 +66,8 @@ export default function () {
           type: "menu-item-package",
           attributes: {
             name: "Mani Pendi",
+            duration: "45 min - 1hr 24 min",
+            price: "$ 120.00",
           },
         },
         {
@@ -71,6 +75,8 @@ export default function () {
           type: "menu-item-service",
           attributes: {
             name: "60 Minute Massage",
+            duration: "1 hr",
+            price: "$ 75.00",
           },
         },
         {
@@ -78,6 +84,8 @@ export default function () {
           type: "menu-item-service",
           attributes: {
             name: "Facial",
+            duration: "1hr 15 min",
+            price: "$ 50.00",
           },
         },
         {
@@ -85,6 +93,8 @@ export default function () {
           type: "menu-item-service",
           attributes: {
             name: "Pendicure",
+            duration: "45 min",
+            price: "$ 20.00",
           },
         },
       ],

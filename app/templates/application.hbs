@@ -1,16 +1,33 @@
-<h1>Service Menu</h1>
+<header class="p-6 border-b shadow-lg">
+  <h1 class="text-3xl tracking-widest">Polymorphic Menu</h1>
+</header>
 
-<div>
-  {{#each this.model as |group|}}
-    <div>
-      <h2>{{group.name}}</h2>
+<main class="px-6 py-12">
+  <h2 class="text-2xl tracking-wide mb-6">Service Menu</h2>
 
-
-      {{#each group.menuItems as |item|}}
-        <div>
-          <h3>{{item.name}}</h3>
+  <div class="flex">
+    {{#each this.model as |group|}}
+      <div class="border rounded mr-6 w-3/4 shadow">
+        <div class="border-b p-3 bg-gray-100">
+          <h2 class="text-xl">{{group.name}}</h2>
         </div>
-      {{/each}}
-    </div>
-  {{/each}}
-</div>
+
+        <div class="grid grid-cols-2 gap-4">
+          {{#each group.menuItems as |item|}}
+            <div class="p-3">
+              <h3 class="text-lg">{{item.name}}</h3>
+              <div class="text-gray-700 text-sm">
+                <span>{{item.duration}} - </span>
+                <span>{{item.price}}</span>
+              </div>
+
+              <button type="button" class="bg-blue-800 text-white mt-4 px-4 py-2 rounded">
+                Book
+              </button>
+            </div>
+          {{/each}}
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</main>
